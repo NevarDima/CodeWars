@@ -34,8 +34,10 @@ public class Main {
     }
 
     public static int isInteresting(int number, int[] awesomePhrases) {
-        if(number<100){
+        if(number<98){
             return 0;
+        } else if(number == 98 || number == 99){
+            return 1;
         }
         
         int[] numbers = new int[3];
